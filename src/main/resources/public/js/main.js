@@ -29,6 +29,7 @@
             })
 
 */
+ /*
 var app = angular.module("springdemo", []);
 app.controller("AppCtrl", function($scope, $http){
     $scope.websites = [];
@@ -43,4 +44,12 @@ app.controller("AppCtrl", function($scope, $http){
     });
 });
 
+*/
 
+var app = angular.module("springdemo", []);
+app.controller("AppCtrl", function($scope, $http){
+    $http.get('http://localhost:8090/api/stackoverflow')
+        .then(function (response) {
+            $scope.websites=response.data;
+    });
+});

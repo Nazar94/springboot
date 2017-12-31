@@ -32,6 +32,7 @@ public class StackoverflowController {
     */
     //this method only prepare response
     //stackoverflowService-class that returns all elements
+
     public List<StackoverflowWebsite> getListOfProviders(){
 
         return stackoverflowService.findAll();
