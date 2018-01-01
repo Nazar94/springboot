@@ -3,9 +3,7 @@ package com.springboot.web;
 import com.springboot.model.StackoverflowWebsite;
 import com.springboot.service.StackOverflowService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -34,7 +32,7 @@ public class StackoverflowController {
     //stackoverflowService-class that returns all elements
 
     public List<StackoverflowWebsite> getListOfProviders(){
-
+    /*find all objects from stackoverflowservice*/
         return stackoverflowService.findAll();
     }
 }
